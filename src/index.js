@@ -4,6 +4,7 @@ import { Route, BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import Home from './home';
+import CreateEvent from './events/CreateEvent.js';
 import EventRegistration from './events';
 import Question  from './questions';
 // import * as serviceWorker from './serviceWorker';
@@ -13,6 +14,7 @@ const routing = (
     <div>
       <Route path="/event" component={EventRegistration} />
       <Route path="/questions" component={Question} />
+      <Route path="/create_event" component={CreateEvent} />
     </div>
   </Router>
 )
